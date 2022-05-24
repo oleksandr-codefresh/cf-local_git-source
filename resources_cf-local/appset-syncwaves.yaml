@@ -17,4 +17,7 @@ spec:
         path: sync-waves
       destination:
         server: '{{server}}'
-        namespace: argocd
+        namespace: argocd-app-set
+      syncPolicy:
+        syncOptions:
+          - CreateNamespace=true

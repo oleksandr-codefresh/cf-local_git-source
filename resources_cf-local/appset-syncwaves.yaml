@@ -1,7 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  # name: waves-appset
+  name: waves-appset
+  namespace: eks-local
 spec:
   generators:
   - clusters: {} # This is a generator, specifically, a cluster generator.

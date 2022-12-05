@@ -4,6 +4,8 @@ metadata:
   name: test-canary-rollout
   finalizers:
     - resources-finalizer.argocd.argoproj.io/foreground
+  labels:
+    test: 'sdsd'
 spec:
   project: default
   source:
